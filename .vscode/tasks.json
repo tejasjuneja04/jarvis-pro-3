@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "JARVIS: backend", "type": "shell", "command": "${workspaceFolder}/.venv/bin/python backend/server.py", "isBackground": true,
+      "problemMatcher": [], "presentation": { "panel": "dedicated", "group": "jarvis" } },
+    { "label": "JARVIS: interface", "type": "shell", "command": "npm run dev", "options": { "cwd": "${workspaceFolder}/frontend/jarvis-ui" },
+      "isBackground": true, "problemMatcher": [], "presentation": { "panel": "dedicated", "group": "jarvis" } },
+    { "label": "JARVIS: start everything", "dependsOn": ["JARVIS: backend", "JARVIS: interface"], "problemMatcher": [] }
+  ]
+}

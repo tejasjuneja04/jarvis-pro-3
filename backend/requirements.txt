@@ -1,0 +1,26 @@
+# ---------- required ----------
+websockets>=13.0
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+openpyxl>=3.1        # .xlsx
+xlrd>=2.0            # .xls (old Excel)
+
+# ---------- machine learning and statistics (train, cluster, anomalies, tests) ----------
+scikit-learn>=1.2
+scipy>=1.10
+
+# ---------- language model (Apple Silicon) ----------
+mlx-lm>=0.25         # Qwen3 support
+mlx-vlm>=0.1.20; python_version >= "3.10"     # pictures and "what's on my screen" (needs Python 3.10+)
+Pillow>=10.0
+
+# ---------- voice: neural Indian and British voices (online). Falls back to macOS "say" ----------
+edge-tts>=6.1
+
+# ---------- optional, each switches on a feature ----------
+psutil>=5.9          # real CPU / memory / battery in the HUD
+pypdf>=4.0           # ask questions about PDF files
+pyarrow>=14.0        # .parquet datasets
+anthropic>=0.40      # cloud brain (needs ANTHROPIC_API_KEY in backend/.env)
+pytest>=8.0          # run the tests:  cd backend && python -m pytest tests

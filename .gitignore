@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+jarvis-env/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and personal data
+.env
+backend/jarvis_data/
+backend/memory.json
+
+# Node
+node_modules/
+frontend/jarvis-ui/dist/
+
+# OS / editor junk
+.DS_Store
+*.wav
+*.log
